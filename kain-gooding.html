@@ -10,7 +10,6 @@
   <style>
     /* ─── Reset ─────────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     /* ─── Brand Tokens ──────────────────────────────────────── */
     :root {
       --charcoal:      #333333;
@@ -20,18 +19,14 @@
       --terracotta:    #A1573A;
       --soft-sage:     #999A96;
       --pale-sky:      #D4E2ED;
-
       --font-heading: 'Lora', Georgia, serif;
       --font-subhead: 'Quicksand', sans-serif;
       --font-body:    'Open Sans', sans-serif;
-
       --border-structural: 2px solid var(--forest-green);
       --content-width: 800px;
     }
-
     /* ─── Base ──────────────────────────────────────────────── */
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--warm-sand);
       color: var(--charcoal);
@@ -40,23 +35,19 @@
       font-size: 17px;
       line-height: 1.7;
     }
-
     h1, h2, h3, h4 {
       font-family: var(--font-heading);
       font-weight: 500;
       line-height: 1.2;
     }
-
     p { margin-bottom: 1.1em; }
     p:last-child { margin-bottom: 0; }
-
     /* ─── Layout ────────────────────────────────────────────── */
     .container {
       max-width: var(--content-width);
       margin: 0 auto;
       padding: 0 32px;
     }
-
     /* ─── Sections ──────────────────────────────────────────── */
     .section-dark {
       background: var(--charcoal);
@@ -66,7 +57,6 @@
     }
     .section-dark h2 { color: var(--warm-sand); }
     .section-dark h3 { color: var(--warm-sand); }
-
     .section-light {
       background: var(--warm-sand);
       color: var(--charcoal);
@@ -75,7 +65,6 @@
     }
     .section-light h2 { color: var(--forest-green); }
     .section-light h3 { color: var(--forest-green); }
-
     /* ─── Eyebrow ───────────────────────────────────────────── */
     .eyebrow {
       font-family: var(--font-subhead);
@@ -88,14 +77,12 @@
     }
     .section-light .eyebrow  { color: var(--burgundy); }
     .section-dark  .eyebrow  { color: var(--terracotta); }
-
     /* ─── Hero ──────────────────────────────────────────────── */
     .hero {
       background: var(--charcoal);
       padding: 88px 0 80px;
       border-bottom: var(--border-structural);
     }
-
     .hero-meta {
       font-family: var(--font-subhead);
       font-size: 11px;
@@ -105,7 +92,6 @@
       color: var(--terracotta);
       margin-bottom: 20px;
     }
-
     .hero h1 {
       font-family: var(--font-heading);
       font-size: clamp(34px, 5vw, 52px);
@@ -114,7 +100,6 @@
       line-height: 1.1;
       margin-bottom: 24px;
     }
-
     .hero-sub {
       font-family: var(--font-body);
       font-weight: 300;
@@ -123,14 +108,12 @@
       line-height: 1.6;
       max-width: 560px;
     }
-
     .hero-rule {
       width: 48px;
       height: 2px;
       background: var(--forest-green);
       margin: 28px 0;
     }
-
     .hero-from {
       font-family: var(--font-subhead);
       font-size: 12px;
@@ -144,21 +127,17 @@
       color: var(--warm-sand);
       font-weight: 600;
     }
-
     /* ─── Section headings ──────────────────────────────────── */
     .section-heading {
       font-size: clamp(26px, 3.5vw, 36px);
       margin-bottom: 10px;
     }
-
     .section-intro {
       font-size: 17px;
       line-height: 1.75;
       margin-top: 20px;
     }
-
     .section-intro p { margin-bottom: 1em; }
-
     /* ─── Divider rule ──────────────────────────────────────── */
     .rule {
       width: 40px;
@@ -167,7 +146,6 @@
       margin: 20px 0 28px;
     }
     .section-dark .rule { background: var(--terracotta); }
-
     /* ─── Numbered steps ────────────────────────────────────── */
     .steps {
       margin-top: 40px;
@@ -175,7 +153,6 @@
       flex-direction: column;
       gap: 0;
     }
-
     .step {
       display: grid;
       grid-template-columns: 56px 1fr;
@@ -193,7 +170,6 @@
     .section-dark .step:last-child {
       border-bottom: 1px solid rgba(216, 209, 203, 0.15);
     }
-
     .step-num {
       font-family: var(--font-heading);
       font-size: 32px;
@@ -203,7 +179,6 @@
     }
     .section-light .step-num { color: var(--forest-green); }
     .section-dark  .step-num { color: var(--terracotta); }
-
     .step-content h4 {
       font-family: var(--font-heading);
       font-size: 18px;
@@ -213,7 +188,6 @@
     }
     .section-light .step-content h4 { color: var(--forest-green); }
     .section-dark  .step-content h4 { color: var(--warm-sand); }
-
     .step-content p {
       font-size: 15.5px;
       line-height: 1.7;
@@ -221,7 +195,6 @@
     }
     .section-light .step-content p { color: var(--charcoal); }
     .section-dark  .step-content p { color: var(--soft-sage); }
-
     /* ─── Insight / Tip boxes ───────────────────────────────── */
     .insight-box {
       background: var(--pale-sky);
@@ -245,7 +218,6 @@
       line-height: 1.65;
       margin-bottom: 0;
     }
-
     .tip-box {
       background: var(--pale-sky);
       border-left: 3px solid var(--burgundy);
@@ -268,7 +240,6 @@
       line-height: 1.65;
       margin-bottom: 0;
     }
-
     /* ─── Recommendation highlight ──────────────────────────── */
     .recommendation-card {
       border: var(--border-structural);
@@ -278,19 +249,16 @@
     .section-dark .recommendation-card {
       border-color: var(--terracotta);
     }
-
     .recommendation-card h3 {
       font-size: 22px;
       margin-bottom: 12px;
     }
     .section-dark .recommendation-card h3 { color: var(--warm-sand); }
-
     .recommendation-card p {
       font-size: 15.5px;
       line-height: 1.7;
     }
     .section-dark .recommendation-card p { color: var(--soft-sage); }
-
     /* ─── What's included list ───────────────────────────────── */
     .includes-list {
       list-style: none;
@@ -317,43 +285,50 @@
     }
     .section-light .includes-list li::before { background: var(--forest-green); }
     .section-dark  .includes-list li::before { background: var(--terracotta); }
-
-    /* ─── Two-column intro split ─────────────────────────────── */
-    .two-col {
+    /* ─── Timeline strip ─────────────────────────────────────── */
+    .timeline {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
       margin-top: 36px;
+      border: var(--border-structural);
     }
-
-    @media (max-width: 640px) {
-      .two-col { grid-template-columns: 1fr; gap: 28px; }
+    .tl-item {
+      padding: 22px 20px;
+      background: var(--warm-sand);
+      border-right: var(--border-structural);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
-
-    .phase-card {
-      border-top: 2px solid var(--forest-green);
-      padding-top: 20px;
-    }
-    .section-dark .phase-card { border-top-color: var(--terracotta); }
-
-    .phase-card .phase-label {
+    .tl-item:last-child { border-right: none; }
+    .tl-label {
       font-family: var(--font-subhead);
       font-size: 10px;
       font-weight: 600;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      color: var(--soft-sage);
     }
-    .section-light .phase-card .phase-label { color: var(--burgundy); }
-    .section-dark  .phase-card .phase-label { color: var(--terracotta); }
-
-    .phase-card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .tl-phase {
+      font-family: var(--font-subhead);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--burgundy);
     }
-    .phase-card p { font-size: 15px; line-height: 1.65; }
-    .section-dark .phase-card p { color: var(--soft-sage); }
-
+    .tl-name {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      color: var(--forest-green);
+      line-height: 1.25;
+    }
+    @media (max-width: 600px) {
+      .timeline { grid-template-columns: 1fr; }
+      .tl-item { border-right: none; border-bottom: var(--border-structural); }
+      .tl-item:last-child { border-bottom: none; }
+    }
     /* ─── Investment section ─────────────────────────────────── */
     .investment-grid {
       display: grid;
@@ -362,18 +337,15 @@
       margin-top: 36px;
       border: var(--border-structural);
     }
-
     @media (max-width: 600px) {
       .investment-grid { grid-template-columns: 1fr; }
     }
-
     .investment-card {
       padding: 32px 28px;
       background: var(--warm-sand);
       border-right: var(--border-structural);
     }
     .investment-card:last-child { border-right: none; }
-
     .investment-card .inv-label {
       font-family: var(--font-subhead);
       font-size: 10px;
@@ -384,14 +356,12 @@
       margin-bottom: 10px;
       display: block;
     }
-
     .investment-card h3 {
       font-family: var(--font-heading);
       font-size: 20px;
       color: var(--forest-green);
       margin-bottom: 12px;
     }
-
     .investment-card .inv-price {
       font-family: var(--font-heading);
       font-size: 28px;
@@ -399,7 +369,6 @@
       margin-bottom: 4px;
       line-height: 1;
     }
-
     .investment-card .inv-price-note {
       font-family: var(--font-subhead);
       font-size: 11px;
@@ -408,18 +377,15 @@
       text-transform: uppercase;
       margin-bottom: 16px;
     }
-
     .investment-card p {
       font-size: 14.5px;
       line-height: 1.65;
       color: var(--charcoal);
     }
-
     /* ─── Pull quote ─────────────────────────────────────────── */
     .pull-quote {
       padding: 40px 0 8px;
     }
-
     .pull-quote-mark {
       font-family: var(--font-heading);
       font-size: 80px;
@@ -428,7 +394,6 @@
       display: block;
       margin-bottom: 16px;
     }
-
     .pull-quote blockquote {
       font-family: var(--font-heading);
       font-style: italic;
@@ -437,7 +402,6 @@
       color: var(--warm-sand);
       max-width: 600px;
     }
-
     .pull-quote cite {
       display: block;
       font-family: var(--font-subhead);
@@ -449,46 +413,85 @@
       font-style: normal;
       margin-top: 20px;
     }
-
     /* ─── Next steps ─────────────────────────────────────────── */
     .next-step-block {
       margin-top: 44px;
       padding-top: 36px;
       border-top: var(--border-structural);
     }
-
     .next-step-block h3 {
       font-size: 24px;
       margin-bottom: 16px;
     }
-
     .next-step-block p { font-size: 16px; line-height: 1.7; }
-
+    /* ─── Fine print ─────────────────────────────────────────── */
+    .fine-print {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--soft-sage);
+      line-height: 1.6;
+      margin-top: 16px;
+    }
+    /* ─── Not included panel ─────────────────────────────────── */
+    .not-included {
+      margin-top: 36px;
+      border-top: 1px solid rgba(216, 209, 203, 0.2);
+      padding-top: 28px;
+    }
+    .not-included h4 {
+      font-family: var(--font-subhead);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--soft-sage);
+      margin-bottom: 14px;
+    }
+    .not-included ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .not-included ul li {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--soft-sage);
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+    .not-included ul li::before {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 1px;
+      background: var(--soft-sage);
+      margin-top: 11px;
+    }
     /* ─── Footer ─────────────────────────────────────────────── */
     .footer {
       background: var(--charcoal);
       padding: 52px 0;
       border-top: var(--border-structural);
     }
-
     .footer-inner {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 32px;
       align-items: end;
     }
-
     @media (max-width: 600px) {
       .footer-inner { grid-template-columns: 1fr; }
     }
-
     .footer-brand {
       font-family: var(--font-heading);
       font-size: 18px;
       color: var(--warm-sand);
       margin-bottom: 8px;
     }
-
     .footer-tagline {
       font-family: var(--font-body);
       font-weight: 300;
@@ -496,11 +499,9 @@
       color: var(--soft-sage);
       line-height: 1.6;
     }
-
     .footer-contact {
       text-align: right;
     }
-
     .footer-contact a {
       display: block;
       font-family: var(--font-subhead);
@@ -512,7 +513,6 @@
       margin-bottom: 4px;
     }
     .footer-contact a:hover { color: var(--warm-sand); }
-
     .footer-date {
       font-family: var(--font-subhead);
       font-size: 11px;
@@ -521,143 +521,6 @@
       color: var(--soft-sage);
       margin-top: 24px;
     }
-
-    /* ─── Concurrent phases grid ────────────────────────────────── */
-    .concurrent-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      margin-top: 40px;
-      border: 1px solid rgba(216, 209, 203, 0.18);
-    }
-
-    .concurrent-card {
-      padding: 32px 28px;
-      border-top: 2px solid var(--terracotta);
-    }
-
-    .concurrent-card:first-child {
-      border-right: 1px solid rgba(216, 209, 203, 0.18);
-    }
-
-    .concurrent-phase {
-      font-family: var(--font-subhead);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .concurrent-card h3 {
-      color: var(--warm-sand);
-      font-size: 21px;
-      margin-bottom: 14px;
-    }
-
-    .concurrent-card > p {
-      font-size: 15px;
-      line-height: 1.7;
-      color: var(--soft-sage);
-      margin-bottom: 20px;
-    }
-
-    .mini-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin: 0;
-    }
-
-    .mini-list li {
-      font-size: 14px;
-      line-height: 1.55;
-      color: var(--soft-sage);
-      display: grid;
-      grid-template-columns: 14px 1fr;
-      gap: 10px;
-      align-items: start;
-    }
-
-    .mini-list li::before {
-      content: '';
-      display: block;
-      width: 5px;
-      height: 5px;
-      background: var(--terracotta);
-      margin-top: 6px;
-      flex-shrink: 0;
-    }
-
-    @media (max-width: 640px) {
-      .concurrent-grid { grid-template-columns: 1fr; }
-      .concurrent-card:first-child { border-right: none; border-bottom: 1px solid rgba(216, 209, 203, 0.18); }
-    }
-
-    /* ─── Timeline strip ─────────────────────────────────────── */
-    .timeline {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 0;
-      margin-top: 36px;
-      border: var(--border-structural);
-    }
-
-    .tl-item {
-      padding: 22px 20px;
-      background: var(--warm-sand);
-      border-right: var(--border-structural);
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .tl-item:last-child { border-right: none; }
-
-    .tl-label {
-      font-family: var(--font-subhead);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--soft-sage);
-    }
-
-    .tl-phase {
-      font-family: var(--font-subhead);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--burgundy);
-    }
-
-    .tl-name {
-      font-family: var(--font-heading);
-      font-size: 15px;
-      color: var(--forest-green);
-      line-height: 1.25;
-    }
-
-    @media (max-width: 600px) {
-      .timeline { grid-template-columns: 1fr; }
-      .tl-item { border-right: none; border-bottom: var(--border-structural); }
-      .tl-item:last-child { border-bottom: none; }
-    }
-
-    /* ─── Fine print ─────────────────────────────────────────── */
-    .fine-print {
-      font-family: var(--font-body);
-      font-size: 12px;
-      font-weight: 300;
-      color: var(--soft-sage);
-      line-height: 1.6;
-      margin-top: 16px;
-    }
-
     /* ─── Responsive ─────────────────────────────────────────── */
     @media (max-width: 600px) {
       .container { padding: 0 20px; }
@@ -677,9 +540,9 @@
   <section class="hero">
     <div class="container">
       <p class="hero-meta">Proposal &nbsp;·&nbsp; May 2026</p>
-      <h1>A Funding Strategy<br>for My Mob Enterprises</h1>
+      <h1>A Strategic Funding Partnership<br>for My Mob Enterprises</h1>
       <div class="hero-rule"></div>
-      <p class="hero-sub">Prepared by Dr Jess Hodgson for Kain Gooding, My Mob Enterprises. Three phases. A clear funding pathway built around your ecosystem of initiatives.</p>
+      <p class="hero-sub">Prepared by Dr Jess Hodgson for Kain Gooding, My Mob Enterprises. From foundations to a fully embedded funding partnership built around the scale of what you have created.</p>
       <p class="hero-from">Keystone Impact Solutions &nbsp;·&nbsp; <strong>Dr Jess Hodgson</strong> &nbsp;·&nbsp; hello@keystoneimpactsolutions.au</p>
     </div>
   </section>
@@ -695,18 +558,18 @@
       <div class="section-intro">
         <p>What you have developed across housing, energy, nanocellulose, and land rejuvenation is inspiring. Independently validated, internationally recognised, and directly solving problems that government and industry have talked around for decades.</p>
         <p>And yet. The funding picture does not yet reflect that. Work of this complexity rarely lands well without a deliberate strategy behind it. Multi-initiative, community-led, systems-level work does not fit neatly into government funding categories, and that friction shows up in ways that are not always easy to see from the inside.</p>
-        <p>Before I can tell you what is getting in the way, I need to understand the full picture. That is what Phase 1 is for.</p>
+        <p>There is also a dimension of this work that changes the funding landscape considerably. My Mob Enterprises is Indigenous-led. That opens a specific set of funding streams, from government Indigenous affairs programs through to philanthropic pools designed for First Nations-led economic and community development, that require their own deliberate strategy to access well.</p>
+        <p>What this ecosystem needs is not just a list of grants. It needs someone who takes ownership of the full funding pipeline: the strategy, the readiness work, and the writing. That is what this proposal is for.</p>
       </div>
-
       <div class="insight-box">
-        <span class="box-eyebrow">What this proposal addresses</span>
-        <p>Before we search for funding, we build the foundation that makes that search worthwhile. Three phases: Strategic Foundations, The Build, and a Quarterly Grant Scout. Built around your work, not around what the databases happen to list.</p>
+        <span class="box-eyebrow">What this proposal covers</span>
+        <p>One partnership, two phases. The first builds what every strong application depends on: a complete picture of the ecosystem, the readiness gaps, and the strategic plan. The second is where I take ownership of the full funding pipeline, from opportunity identification through to submission-ready applications.</p>
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════════ -->
-  <!-- SECTION 2: The recommendation (dark)                       -->
+  <!-- SECTION 2: The approach (dark)                             -->
   <!-- ══════════════════════════════════════════════════════════ -->
   <section class="section-dark">
     <div class="container">
@@ -715,30 +578,28 @@
       <div class="rule"></div>
       <div class="section-intro">
         <p>Housing that communities can build themselves. Renewable energy that keeps that housing powered. Nanocellulose that turns farm and forestry waste into structural materials and hospital-grade antimicrobials. Land rejuvenation that makes degraded country productive again. Each of these is compelling on its own. Together, they form something far more significant: a vertically integrated, community-led model for how disadvantaged regions can become self-sufficient.</p>
-        <p>The funders who will be most interested in your work are not the ones looking at housing in isolation, or energy, or materials science. They are the ones looking for systems change. That is exactly what you have built. Our job is to map the ecosystem from the inside and find the funders who see it.</p>
+        <p>The funders who will be most interested in your work are not the ones looking at housing in isolation, or energy, or materials science. They are the ones looking for systems change. That is exactly what you have built. Before we can represent it to those funders, we need to map it from the inside and build the language to make it visible. That is the starting point.</p>
       </div>
-
       <div class="recommendation-card">
         <h3>The ecosystem is the competitive advantage.</h3>
-        <p>Everything that has worked against you so far, the complexity, the interconnectedness, the fact that your work does not sit in any single funding category, is precisely what makes it compelling to the right funder. Phase 1 is where we build the language and the strategy to make that visible.</p>
+        <p>Everything that has worked against you so far, the complexity, the interconnectedness, the fact that your work does not sit in any single funding category, is precisely what makes it compelling to the right funder. Building the case for it, and then pursuing it with a dedicated partner, is what this engagement is designed to do.</p>
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════════ -->
-  <!-- SECTION 3: Phase 1 (light)                                 -->
+  <!-- SECTION 3: Phase 1 — Strategic Foundations (light)         -->
   <!-- ══════════════════════════════════════════════════════════ -->
   <section class="section-light">
     <div class="container">
-      <span class="eyebrow">Phase One &nbsp;·&nbsp; One-off Project</span>
+      <span class="eyebrow">The Strategic Funding Partnership &nbsp;·&nbsp; Phase One</span>
       <h2 class="section-heading">Strategic Foundations</h2>
       <div class="rule"></div>
       <div class="section-intro">
-        <p>Before we build a funding strategy worth following, we need to know where you have been and where you are. Phase 1 produces the foundational documents and strategic plan that make everything else count.</p>
+        <p>Before we pursue any opportunity, we build what every strong application depends on: a complete picture of where you have been, where you are, and where the funding landscape intersects with what you have built. Phase One produces the foundational documents and strategic plan that the full partnership runs on.</p>
       </div>
 
       <div class="steps">
-
         <div class="step">
           <div class="step-num">01</div>
           <div class="step-content">
@@ -746,7 +607,6 @@
             <p>A session covering the full ecosystem: housing, energy, nanocellulose, and land rejuvenation. The science, the testing results, the partnerships, the evidence base, the budgets, the goals. I need to understand how the pieces connect before I can represent the work to funders.</p>
           </div>
         </div>
-
         <div class="step">
           <div class="step-num">02</div>
           <div class="step-content">
@@ -754,7 +614,6 @@
             <p>A review of past applications and funding attempts: what was applied for, what happened, and why. We look for patterns, gaps in positioning or eligibility, and opportunities left on the table.</p>
           </div>
         </div>
-
         <div class="step">
           <div class="step-num">03</div>
           <div class="step-content">
@@ -762,65 +621,83 @@
             <p>An honest assessment of where the organisation sits right now relative to what competitive funders expect to see. This covers governance documentation, evidence base, co-contribution capacity, impact data, and narrative coherence. For each gap identified, you get a clear action to close it before the right opportunity opens.</p>
           </div>
         </div>
-
         <div class="step">
           <div class="step-num">04</div>
           <div class="step-content">
             <h4>Theory of Change, Mission and Vision</h4>
-            <p>Establishing the narrative that sits beneath everything: what change you are trying to create, how your work creates it, and what success looks like. The bedrock of every compelling application, and what stops you being misread.</p>
+            <p>Establishing the narrative that sits beneath everything: what change you are trying to create, how your work creates it, and what success looks like. The bedrock of every compelling application, and what stops you being misread by funders who do not yet have the language for what you have built.</p>
           </div>
         </div>
-
         <div class="step">
           <div class="step-num">05</div>
           <div class="step-content">
             <h4>Strategic Funding Plan</h4>
-            <p>From everything gathered: the funding landscape most relevant to your work, the funders worth pursuing (Australian and international), the sequencing, and the preparatory steps for each priority application.</p>
+            <p>From everything gathered: the funding landscape most relevant to your work, the funders worth pursuing across Australian and international programs, the sequencing, and the preparation steps for each priority opportunity. This is the document the partnership runs on.</p>
           </div>
         </div>
-
       </div>
 
       <div class="insight-box">
-        <span class="box-eyebrow">How this works</span>
-        <p>Phase 1 is a single, fixed-fee project. Complete when we have foundational documents and a strategic plan you can act on. The deliverables are yours. No obligation to continue.</p>
+        <span class="box-eyebrow">How Phase One works</span>
+        <p>Phase One is the opening phase of the partnership. When the foundational documents and strategic plan are complete, Phase Two begins. The deliverables are yours throughout.</p>
       </div>
-
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════════ -->
-  <!-- SECTION 4: Phases 2 + 3 concurrent (dark)                  -->
+  <!-- SECTION 4: Strategic Funding Partnership (dark)            -->
   <!-- ══════════════════════════════════════════════════════════ -->
   <section class="section-dark">
     <div class="container">
-      <span class="eyebrow">Phases Two and Three &nbsp;·&nbsp; Concurrent</span>
-      <h2 class="section-heading">Closing gaps and building the pipeline. At the same time.</h2>
+      <span class="eyebrow">The Strategic Funding Partnership &nbsp;·&nbsp; Phase Two</span>
+      <h2 class="section-heading">This is what it looks like when funding becomes someone else's job.</h2>
       <div class="rule"></div>
       <div class="section-intro">
-        <p>Once Phase 1 is complete, two workstreams begin together. Phase 2 uses the gap analysis to build the readiness infrastructure your applications will depend on. Phase 3 starts the quarterly intelligence cycle so the funding landscape is already being mapped while that work progresses.</p>
-        <p>Running them in parallel means that by the time a strong opportunity lands in the quarterly report, you are ready to act on it.</p>
+        <p>Phase Two is the embedded partnership in action. I become your funding strategist, responsible for the full pipeline from the moment an opportunity is identified to the moment a submission-ready application lands in your inbox. You focus on the work. I own the funding.</p>
+        <p>By the time Phase One is complete, we will have the strategic plan, the readiness picture, and the funder shortlist that drives everything forward. Phase Two is where we act on it.</p>
       </div>
 
-      <div class="concurrent-grid">
-
-        <div class="concurrent-card">
-          <span class="concurrent-phase">Phase Two</span>
-          <h3>The Build</h3>
-          <p>Every gap identified in Phase 1 becomes a specific action here. The scope is shaped by what Phase 1 surfaces, but typically covers business structure decisions (including whether NFP registration is the right move), strategic positioning, and a communications strategy. From there we build out the documentation layer: governance, evidence packaging, funder-facing narratives for each initiative, and budget narrative. The deliverables from this phase are what your applications will stand on.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h4>Grant Intelligence and Opportunity Identification</h4>
+            <p>Ongoing research across Australian foundations, government programs, and international funders, matched against your profile and priorities. You always know what is available and whether you are ready to go after it.</p>
+          </div>
         </div>
-
-        <div class="concurrent-card">
-          <span class="concurrent-phase">Phase Three</span>
-          <h3>Quarterly Grant Scout</h3>
-          <p>The intelligence cycle begins in parallel, so the funding landscape is already being mapped while The Build progresses. Four times a year: a curated opportunity report with green, amber, and red eligibility ratings across Australian foundations, government programs, and international funders, followed by a 60-minute strategy call to review and prioritise. Priority grant writing access at a discounted rate. After the 5-month project, the Scout continues as an ongoing quarterly retainer.</p>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h4>Grant Writing, End to End</h4>
+            <p>Up to four grant applications per year, written from brief to submission-ready draft. Applications sourced through the partnership process. Additional applications beyond the four are available at a discounted rate.</p>
+          </div>
         </div>
-
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h4>Monthly Strategy and Pipeline Review</h4>
+            <p>A 60-minute call each month covering the opportunity landscape, application progress, readiness developments, and pipeline planning. This is where we make decisions together about where to put the energy, what to pursue, and what to let pass.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h4>Quarterly Strategic Review</h4>
+            <p>Four times a year, a formal checkpoint to assess what has worked, recalibrate priorities, and adjust the funding calendar based on results and emerging opportunities. The 12-month funding calendar built in the first quarter becomes a living document: upcoming deadlines, preparation milestones, application windows, and acquittal dates, all in one place.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h4>Grant Lifecycle Support</h4>
+            <p>The work does not stop at submission. Readiness coaching continues throughout the partnership, building the evidence base, governance documentation, and organisational narrative needed to compete at a high level over time. For grants already won, impact reporting summaries and acquittal preparation guidance ensure obligations are met and position you for repeat funding from the same source.</p>
+          </div>
+        </div>
       </div>
 
       <div class="tip-box">
-        <span class="box-eyebrow">On grant writing</span>
-        <p>Grant writing fees are separate and quoted per application based on complexity and length. The Scout retainer means you only commit to writing fees when eligibility, evidence, and fit are confirmed.</p>
+        <span class="box-eyebrow">On the four-application cap</span>
+        <p>The four-application cap is a capacity safeguard, not a ceiling on ambition. A single medium-complexity grant application takes 25 to 30 hours to write well. Four applications per year represents significant delivered value in writing alone, alongside all the scouting, coaching, strategy, and lifecycle work. Quality over volume is how applications win.</p>
       </div>
 
     </div>
@@ -832,53 +709,50 @@
   <section class="section-light">
     <div class="container">
       <span class="eyebrow">The investment</span>
-      <h2 class="section-heading">Five months to foundations. Quarterly from there.</h2>
+      <h2 class="section-heading">One partnership. One investment.</h2>
       <div class="rule"></div>
-      <p class="section-intro">The 5-month project covers all three phases at a flat rate of $1,500 per month. Phases 2 and 3 run concurrently once Phase 1 is complete. After month 5, the Quarterly Grant Scout continues as an ongoing retainer.</p>
+      <p class="section-intro">The Strategic Funding Partnership is a 12-month commitment. It covers both phases: the Strategic Foundations work and the full embedded partnership that follows. Up to four grant applications are included each year, alongside all the strategy, coaching, and lifecycle support that makes them worth submitting.</p>
 
-      <div class="timeline">
-        <div class="tl-item">
-          <span class="tl-label">Months 1–2</span>
-          <span class="tl-phase">Phase 1</span>
-          <span class="tl-name">Strategic Foundations</span>
-        </div>
-        <div class="tl-item">
-          <span class="tl-label">Months 2–5</span>
-          <span class="tl-phase">Phases 2 + 3</span>
-          <span class="tl-name">The Build + Grant Scout</span>
-        </div>
-        <div class="tl-item">
-          <span class="tl-label">Month 5 onwards</span>
-          <span class="tl-phase">Phase 3</span>
-          <span class="tl-name">Quarterly Grant Scout</span>
-        </div>
+      <div class="recommendation-card">
+        <h3>Why twelve months?</h3>
+        <p>Twelve months may feel like a significant commitment upfront. Here is my case for why it matters.</p>
+        <p>The partnership has two phases for a reason. Phase One, the audit, the gap analysis, the strategy, is not overhead. It is the work that determines whether Phase Two delivers anything worth having. Submitting applications before we have built the evidence base, filled the readiness gaps, and developed the narrative for the full ecosystem would be a waste of your investment and, frankly, of the opportunity.</p>
+        <p>What you are looking for is a partner who takes responsibility for finding, preparing, and submitting applications that can actually win. The 12-month structure is what makes that possible. It gives us time to do Phase One properly, close the gaps, and then pursue a well-prepared pipeline, one application per quarter, each one submitted from a position of genuine readiness. That is the difference between submitting and winning.</p>
       </div>
 
       <div class="investment-grid">
         <div class="investment-card">
-          <span class="inv-label">5-Month Project &nbsp;·&nbsp; Phases 1, 2 and 3</span>
-          <h3>Strategic Foundations + The Build + Grant Scout</h3>
-          <div class="inv-price">$7,500</div>
-          <div class="inv-price-note">$1,500 per month &nbsp;·&nbsp; 5-month minimum</div>
-          <p>Covers the full Strategic Foundations project, concurrent The Build, and the first two quarters of the Grant Scout. No commitment required beyond 5 months.</p>
+          <span class="inv-label">Payment Option 1</span>
+          <h3>Monthly</h3>
+          <div class="inv-price">$2,600</div>
+          <div class="inv-price-note">Per month &nbsp;·&nbsp; 12-month minimum</div>
+          <p>Billed monthly in advance. Includes both phases of the partnership and up to four grant applications per year. Eight weeks' written notice to exit after the initial 12-month term.</p>
         </div>
         <div class="investment-card">
-          <span class="inv-label">Ongoing &nbsp;·&nbsp; After Month 5</span>
-          <h3>Quarterly Grant Scout</h3>
-          <div class="inv-price">$400</div>
-          <div class="inv-price-note">Per month &nbsp;·&nbsp; Billed quarterly</div>
-          <p>The intelligence cycle continues after the project period. Curated opportunity report, 60-minute strategy call, and priority grant writing access at a discounted rate. Three months' notice to pause or discontinue.</p>
+          <span class="inv-label">Payment Option 2</span>
+          <h3>6-Monthly</h3>
+          <div class="inv-price">$15,000</div>
+          <div class="inv-price-note">Per 6 months &nbsp;·&nbsp; Save $1,200 across the year</div>
+          <p>Two payments of $15,000 across the year. Same scope and grant allocation as the monthly option.</p>
+        </div>
+      </div>
+      <div class="investment-grid" style="margin-top:2px; border-top: none;">
+        <div class="investment-card" style="border-right: none; grid-column: 1 / -1;">
+          <span class="inv-label">Payment Option 3</span>
+          <h3>Annual Upfront</h3>
+          <div class="inv-price">$27,600</div>
+          <div class="inv-price-note">Single annual payment &nbsp;·&nbsp; Save $3,600</div>
+          <p>One payment covering the full 12 months. Same scope and grant allocation as the monthly option. Best value across the year.</p>
         </div>
       </div>
 
-      <p class="fine-print">Pricing is current as at the date of this proposal and is subject to change. Any changes to ongoing retainer fees will be communicated with a minimum of one quarter's notice.</p>
+      <p class="fine-print">Pricing is current as at the date of this proposal and is subject to annual review with a minimum of four weeks' notice of any adjustment. The 12-month minimum commitment runs from the commencement of the partnership.</p>
 
       <div class="next-step-block">
         <h3>What happens next</h3>
-        <p>If this proposal looks like the right direction, reply to let me know and we will schedule a short call to confirm the scope and timeline, agree on the start date, and get moving.</p>
-        <p>If you have questions before then, or if anything here needs adjusting to better fit how you work, I am glad to talk it through.</p>
+        <p>If this proposal looks like the right direction, reply to let me know and we will schedule a short call to confirm the scope and start date, agree on the payment option that works best for you, and get moving.</p>
+        <p>If you have questions before then, or if anything here needs adjusting to better fit how you work, I am glad to talk it through. There is no pressure and no deadline on this. When it feels right, we start.</p>
       </div>
-
     </div>
   </section>
 
